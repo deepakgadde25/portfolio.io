@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+body
+{
+    background-color: #1D2228;
+}
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  color:white
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  font-family: 'ABeeZee';
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  color:#FB8122;
+  transition: all ease-in-out 250ms;
+  font-family: 'ABeeZee';
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    color:#FB8122;
+    transition: all ease-in-out 250ms;
+    font-family: 'ABeeZee';
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+   
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.main h2 a {
+    color:#E1E2E2;
+    font-size: 25px;
+    font-family: 'ABeeZee';
+    padding-left: 55px;
+    margin-top: 50px;
+    text-decoration: none;
+
+}
+.main{
+    padding-top:30px ;
+}
+.main h2 a :hover{
+    color:#FB8122
+}
+
+
+  
+  .heading {
+  
+    color:#E1E2E2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'ABeeZee';
+    font-size: 20px;
+    list-style: none;
+
+
+  
+  }
+  .heading li a{
+    color:white;
+    text-decoration: none;
+    transition: all ease-in-out 250ms;
+    font-family: 'ABeeZee';
+
+  }
+  .heading a:hover:not(.active) {
+color: #FB8122;
+  
+  }
+  
+.part1{
+padding-top: 50px;
+}
+.part1 h2{
+  color:#FB8122;
+  font-family: 'Abeezee';
+  padding-left: 230px;
+  font-size: 45px;
+  margin-top: -350px;
+}
+.part1 h3{
+    padding-left: 300px;
+    font-family: 'ABeeZee';
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+.pngp{
+  margin-left: 770px;
+}
+
+  .horizontal-line {
+    position: relative;
+    height: 20px; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+    border-bottom: 1px solid white; /* Adjust the border properties as needed */
+  }
+  
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px; /* Adjust the circle size as needed */
+    height: 20px; /* Adjust the circle size as needed */
+    background-color: white; /* Adjust the circle color as needed */
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .content p{
+    color: white;
+    font-family: 'ABeeZee';
+    line-height: 1.6; /* Line height */
+  margin-bottom: 20px;
+  }
+  .content {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center vertically */
+    line-height: 1.6; /* Line height */
+  margin-bottom: 20px; /* Bottom margin */
+  padding-left: 120px; /* Left indentation */
+  padding-right: 170px; /* Right indentation */
+  }
+  .content h2{
+    color: #FB8122;
+    font-family: 'ABeeZee';
+  }
+  .text {
+    flex: 1; /* Allow text to take remaining space */
+  }
+  
+  .photo {
+    margin-left: 20px;
+    padding-top: 20px; /* Adjust the distance between text and photo */
+    /* Add any styling for the photo container */
+  }
+  /* CSS */
+.button-22 {
+    align-items: center;
+    appearance: button;
+    background-color: #FB8122;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: "ABeeZee";
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 10px 21px;
+    text-align: center;
+    text-transform: none;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-22:active {
+    background-color: #FB8122;
+  }
+  
+  .button-22:hover {
+    background-color: #FB8122;
+  }
+  .connect{
+    text-align: center;
+    color: white;
+    font-family: 'ABeeZee';
+    font-size: 20px;
+  }
+  .connect .logos i{
+    margin-left: 24px;
+    color: #FB8122;
+  }
+
+
+
+  @media (max-width:600px) {
+
+    .part1{
+      padding-top: 50px;
+      }
+      .part1 h2{
+        color:#FB8122;
+        font-family: 'Abeezee';
+        padding-left: 10px;
+        font-size: 25px;
+    
+      }
+      .part1 h3{
+          padding-left: 80px;
+          font-family: 'ABeeZee';
+          font-size: 20px;
+          margin-top: -10px;
+      }
+      .pngp{
+        margin-left:-100px;
+        size: 50cm;
+       background-position: 45%;
+       opacity: 0.1;
+      }
+      
+     
+     
+      .content h2{
+        color: #FB8122;
+        font-family: 'ABeeZee';
+      }
+      .content {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+    
+    .content .text {
+        text-align: justify; /* Justify text */
+        margin-top: 20px; /* Add some space between photo and text */
+        flex: 1;
+      
+    }
+    
+      
+  }
